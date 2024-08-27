@@ -37,6 +37,32 @@ public class Tools {
     	myLog.log("log3......");
     	myLog.log("log4......");
     	
+    	try {
+			calculs(0);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
 	}
+    
+    public static void calculs(int i) throws Exception {
+    	
+    	//Option1: la méthode gère sa propre exception
+//    	try {
+//    	System.out.println(10 / i);
+//    	}catch(Exception e) {
+//    		e.printStackTrace();
+//    	}
+    	
+    	//Option2: faire une remontée d'exception -> lexception doit être gérée par les appelants de cette méthode
+    	if(i != 0) {
+    		System.out.println(10 / i);
+    	}else {
+    		
+    		//throw permet de déclencher une exception
+    		throw new Exception("Tentative de division par zéro.....");
+    	}
+    }
 
 }
