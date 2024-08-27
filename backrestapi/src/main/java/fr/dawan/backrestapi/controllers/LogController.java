@@ -81,7 +81,7 @@ public class LogController {
 		// convertir le contenu du body (format json) en texte à insérer dans le fichier
 		// des logs
 		/*
-		 * ObjectMapper: convertir json - texte et vice versa - fait partie de la
+		 * ObjectMapper: convertir objet - texte et vice versa - fait partie de la
 		 * dépendance Jackson ModelMapper: convertir dto -> en entity (model) et vice
 		 * versa
 		 */

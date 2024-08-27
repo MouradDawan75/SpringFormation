@@ -1,0 +1,716 @@
+2024-08-26 15:25:00.209 INFO  1098  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 7968 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 15:25:00.213 INFO  1102  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 15:25:01.436 INFO  2325  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 15:25:01.458 INFO  2347  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 15:25:01.458 INFO  2347  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 15:25:01.533 INFO  2422  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 15:25:01.534 INFO  2423  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1241 ms
+2024-08-26 15:25:01.778 DEBUG 2667  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2024-08-26 15:25:01.860 DEBUG 2749  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 15:25:01.903 DEBUG 2792  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 15:25:01.950 DEBUG 2839  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 15:25:02.056 INFO  2945  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 15:25:02.071 INFO  2960  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 2.442 seconds (process running for 3.564)
+2024-08-26 15:25:22.902 INFO  23791 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 15:25:22.902 INFO  23791 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 15:25:22.903 DEBUG 23792 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 15:25:22.903 DEBUG 23792 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 15:25:22.903 DEBUG 23792 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 15:25:22.904 DEBUG 23793 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a517d6a
+2024-08-26 15:25:22.906 DEBUG 23795 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@26f68253
+2024-08-26 15:25:22.907 DEBUG 23796 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 15:25:22.908 INFO  23797 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2024-08-26 15:25:22.929 DEBUG 23818 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/demo/m1", parameters={}
+2024-08-26 15:25:22.959 DEBUG 23848 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.DemoController#m1()
+2024-08-26 15:25:22.987 INFO  23876 --- [http-nio-8085-exec-2] f.d.b.controllers.DemoController : Appel de la méthode m1........
+2024-08-26 15:25:23.004 DEBUG 23893 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain]
+2024-08-26 15:25:23.005 DEBUG 23894 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing ["m1"]
+2024-08-26 15:25:23.022 DEBUG 23911 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:27:34.214 INFO  155103 --- [RMI TCP Connection(11)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 15:49:19.155 INFO  1175  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 7816 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 15:49:19.162 INFO  1182  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 15:49:20.379 INFO  2399  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 15:49:20.404 INFO  2424  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 15:49:20.405 INFO  2425  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 15:49:20.496 INFO  2516  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 15:49:20.497 INFO  2517  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1257 ms
+2024-08-26 15:49:20.800 DEBUG 2820  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-08-26 15:49:20.875 DEBUG 2895  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 15:49:20.918 DEBUG 2938  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 15:49:20.961 DEBUG 2981  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 15:49:21.082 INFO  3102  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 15:49:21.098 INFO  3118  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 2.591 seconds (process running for 3.65)
+2024-08-26 15:49:49.543 INFO  31563 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 15:49:49.544 INFO  31564 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 15:49:49.545 DEBUG 31565 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 15:49:49.545 DEBUG 31565 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 15:49:49.545 DEBUG 31565 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 15:49:49.547 DEBUG 31567 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3204e0c7
+2024-08-26 15:49:49.548 DEBUG 31568 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5913ecc2
+2024-08-26 15:49:49.549 DEBUG 31569 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 15:49:49.550 INFO  31570 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2024-08-26 15:49:49.566 DEBUG 31586 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback", parameters={}
+2024-08-26 15:49:49.586 DEBUG 31606 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:49:49.624 DEBUG 31644 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\logback
+2024-08-26 15:49:49.626 ERROR 31646 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\logback
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:49:49.642 DEBUG 31662 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:49:49.644 DEBUG 31664 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 15:49:49.684 DEBUG 31704 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 15:49:49.687 DEBUG 31707 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 15:49:49 CEST 2024, status=500, error=Internal Server Error, path=/api/logs/lo (truncated)...]
+2024-08-26 15:49:49.753 DEBUG 31773 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:50:37.514 DEBUG 79534 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback", parameters={}
+2024-08-26 15:50:37.517 DEBUG 79537 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:50:37.518 DEBUG 79538 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\logback
+2024-08-26 15:50:37.518 ERROR 79538 --- [http-nio-8085-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\logback
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:50:37.520 DEBUG 79540 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:50:37.520 DEBUG 79540 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-08-26 15:50:37.547 DEBUG 79567 --- [http-nio-8085-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-08-26 15:50:37.557 DEBUG 79577 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:51:31.585 DEBUG 133605 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback.txt", parameters={}
+2024-08-26 15:51:31.587 DEBUG 133607 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:51:31.588 DEBUG 133608 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\logback.txt
+2024-08-26 15:51:31.589 ERROR 133609 --- [http-nio-8085-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\logback.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:51:31.591 DEBUG 133611 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:51:31.593 DEBUG 133613 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 15:51:31.595 DEBUG 133615 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 15:51:31.595 DEBUG 133615 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 15:51:31 CEST 2024, status=500, error=Internal Server Error, path=/api/logs/lo (truncated)...]
+2024-08-26 15:51:31.597 DEBUG 133617 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:51:48.825 DEBUG 150845 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback", parameters={}
+2024-08-26 15:51:48.826 DEBUG 150846 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:51:48.827 DEBUG 150847 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\logback
+2024-08-26 15:51:48.829 ERROR 150849 --- [http-nio-8085-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\logback
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:51:48.829 DEBUG 150849 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:51:48.829 DEBUG 150849 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 15:51:48.831 DEBUG 150851 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 15:51:48.833 DEBUG 150853 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 15:51:48 CEST 2024, status=500, error=Internal Server Error, path=/api/logs/lo (truncated)...]
+2024-08-26 15:51:48.836 DEBUG 150856 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:54:33.748 INFO  315768 --- [RMI TCP Connection(12)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 15:54:43.747 INFO  1231  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 3716 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 15:54:43.754 INFO  1238  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 15:54:45.256 INFO  2740  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 15:54:45.277 INFO  2761  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 15:54:45.278 INFO  2762  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 15:54:45.386 INFO  2870  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 15:54:45.387 INFO  2871  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1553 ms
+2024-08-26 15:54:45.722 DEBUG 3206  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-08-26 15:54:45.834 DEBUG 3318  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 15:54:45.955 DEBUG 3439  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 15:54:46.062 DEBUG 3546  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 15:54:46.208 INFO  3692  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 15:54:46.223 INFO  3707  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 3.112 seconds (process running for 4.34)
+2024-08-26 15:55:07.911 INFO  25395 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 15:55:07.911 INFO  25395 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 15:55:07.912 DEBUG 25396 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 15:55:07.913 DEBUG 25397 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 15:55:07.915 DEBUG 25399 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 15:55:07.919 DEBUG 25403 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57b42ffb
+2024-08-26 15:55:07.919 DEBUG 25403 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3322ea0b
+2024-08-26 15:55:07.920 DEBUG 25404 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 15:55:07.920 INFO  25404 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2024-08-26 15:55:07.938 DEBUG 25422 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback", parameters={}
+2024-08-26 15:55:07.967 DEBUG 25451 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:55:08.007 DEBUG 25491 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\logback
+2024-08-26 15:55:08.010 ERROR 25494 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\logback
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:55:08.028 DEBUG 25512 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:55:08.031 DEBUG 25515 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 15:55:08.068 DEBUG 25552 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 15:55:08.070 DEBUG 25554 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 15:55:08 CEST 2024, status=500, error=Internal Server Error, path=/api/logs/lo (truncated)...]
+2024-08-26 15:55:08.135 DEBUG 25619 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:55:40.394 DEBUG 57878 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/api/logs/debug", parameters={}
+2024-08-26 15:55:40.395 DEBUG 57879 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:55:40.398 DEBUG 57882 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.nio.file.NoSuchFileException: c:\tempBidon\debug
+2024-08-26 15:55:40.399 ERROR 57883 --- [http-nio-8085-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.nio.file.NoSuchFileException: c:\tempBidon\debug
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at fr.dawan.backrestapi.controllers.LogController.getLogFile(LogController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 15:55:40.400 DEBUG 57884 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 15:55:40.402 DEBUG 57886 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 15:55:40.403 DEBUG 57887 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 15:55:40.404 DEBUG 57888 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 15:55:40 CEST 2024, status=500, error=Internal Server Error, path=/api/logs/de (truncated)...]
+2024-08-26 15:55:40.407 DEBUG 57891 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 15:55:58.842 DEBUG 76326 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : GET "/api/logs/debug.log", parameters={}
+2024-08-26 15:55:58.843 DEBUG 76327 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:55:58.844 INFO  76328 --- [http-nio-8085-exec-6] f.d.b.controllers.LogController : Téléchargement du fichier des logs: debug.log
+2024-08-26 15:55:58.853 DEBUG 76337 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:application/octet-stream' in response
+2024-08-26 15:55:58.854 DEBUG 76338 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [Byte array resource [resource loaded from byte array]]
+2024-08-26 15:55:58.858 DEBUG 76342 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:56:27.363 DEBUG 104847 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback.log", parameters={}
+2024-08-26 15:56:27.364 DEBUG 104848 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:56:27.366 INFO  104850 --- [http-nio-8085-exec-7] f.d.b.controllers.LogController : Téléchargement du fichier des logs: logback.log
+2024-08-26 15:56:27.366 DEBUG 104850 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:application/octet-stream' in response
+2024-08-26 15:56:27.366 DEBUG 104850 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [Byte array resource [resource loaded from byte array]]
+2024-08-26 15:56:27.368 DEBUG 104852 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:56:50.580 DEBUG 128064 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback.log", parameters={}
+2024-08-26 15:56:50.587 DEBUG 128071 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:56:50.591 INFO  128075 --- [http-nio-8085-exec-8] f.d.b.controllers.LogController : Téléchargement du fichier des logs: logback.log
+2024-08-26 15:56:50.592 DEBUG 128076 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:application/octet-stream' in response
+2024-08-26 15:56:50.592 DEBUG 128076 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [Byte array resource [resource loaded from byte array]]
+2024-08-26 15:56:50.594 DEBUG 128078 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:57:50.999 DEBUG 188483 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback.log", parameters={}
+2024-08-26 15:57:51.001 DEBUG 188485 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:57:51.005 INFO  188489 --- [http-nio-8085-exec-2] f.d.b.controllers.LogController : Téléchargement du fichier des logs: logback.log
+2024-08-26 15:57:51.007 DEBUG 188491 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:application/octet-stream' in response
+2024-08-26 15:57:51.007 DEBUG 188491 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [Byte array resource [resource loaded from byte array]]
+2024-08-26 15:57:51.010 DEBUG 188494 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:58:51.125 DEBUG 248609 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/api/logs/logback.log", parameters={}
+2024-08-26 15:58:51.127 DEBUG 248611 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#getLogFile(String)
+2024-08-26 15:58:51.128 INFO  248612 --- [http-nio-8085-exec-4] f.d.b.controllers.LogController : Téléchargement du fichier des logs: logback.log
+2024-08-26 15:58:51.129 DEBUG 248613 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:application/octet-stream' in response
+2024-08-26 15:58:51.129 DEBUG 248613 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [Byte array resource [resource loaded from byte array]]
+2024-08-26 15:58:51.131 DEBUG 248615 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 15:58:52.379 INFO  249863 --- [RMI TCP Connection(12)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 16:25:03.018 INFO  2632  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 3296 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 16:25:03.024 INFO  2638  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 16:25:05.261 INFO  4875  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 16:25:05.339 INFO  4953  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 16:25:05.341 INFO  4955  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 16:25:05.426 INFO  5040  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 16:25:05.427 INFO  5041  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2316 ms
+2024-08-26 16:25:05.788 DEBUG 5402  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-08-26 16:25:05.909 DEBUG 5523  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 16:25:05.965 DEBUG 5579  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 16:25:06.047 DEBUG 5661  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 16:25:06.215 INFO  5829  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 16:25:06.238 INFO  5852  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 4.851 seconds (process running for 6.716)
+2024-08-26 16:25:18.980 INFO  18594 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 16:25:18.983 INFO  18597 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 16:25:18.984 DEBUG 18598 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 16:25:18.984 DEBUG 18598 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 16:25:18.985 DEBUG 18599 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 16:25:18.987 DEBUG 18601 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@58659c25
+2024-08-26 16:25:18.988 DEBUG 18602 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@63eba60d
+2024-08-26 16:25:18.989 DEBUG 18603 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 16:25:18.990 INFO  18604 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2024-08-26 16:25:19.019 DEBUG 18633 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/demo/exception", parameters={}
+2024-08-26 16:25:19.057 DEBUG 18671 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.DemoController#testException()
+2024-08-26 16:25:19.083 DEBUG 18697 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Failed to complete request: java.lang.Exception
+2024-08-26 16:25:19.085 ERROR 18699 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception] with root cause
+java.lang.Exception: null
+	at fr.dawan.backrestapi.controllers.DemoController.testException(DemoController.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-26 16:25:19.100 DEBUG 18714 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-26 16:25:19.103 DEBUG 18717 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-26 16:25:19.145 DEBUG 18759 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 16:25:19.148 DEBUG 18762 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [{timestamp=Mon Aug 26 16:25:19 CEST 2024, status=500, error=Internal Server Error, path=/demo/except (truncated)...]
+2024-08-26 16:25:19.247 DEBUG 18861 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 500
+2024-08-26 16:26:15.176 INFO  74790 --- [RMI TCP Connection(8)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 16:28:53.929 INFO  1810  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 6020 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 16:28:53.934 INFO  1815  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 16:28:55.666 INFO  3547  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 16:28:55.699 INFO  3580  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 16:28:55.701 INFO  3582  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 16:28:55.837 INFO  3718  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 16:28:55.838 INFO  3719  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1817 ms
+2024-08-26 16:28:56.145 DEBUG 4026  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-08-26 16:28:56.305 DEBUG 4186  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 16:28:56.357 DEBUG 4238  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 16:28:56.431 DEBUG 4312  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 16:28:56.601 INFO  4482  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 16:28:56.625 INFO  4506  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 3.535 seconds (process running for 5.154)
+2024-08-26 16:29:02.853 INFO  10734 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 16:29:02.854 INFO  10735 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 16:29:02.858 DEBUG 10739 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 16:29:02.859 DEBUG 10740 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 16:29:02.859 DEBUG 10740 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 16:29:02.862 DEBUG 10743 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@75070a49
+2024-08-26 16:29:02.864 DEBUG 10745 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@c661594
+2024-08-26 16:29:02.865 DEBUG 10746 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 16:29:02.866 INFO  10747 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2024-08-26 16:29:02.895 DEBUG 10776 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/demo/exception", parameters={}
+2024-08-26 16:29:02.919 DEBUG 10800 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.DemoController#testException()
+2024-08-26 16:29:02.947 DEBUG 10828 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.backrestapi.controllers.DemoController#exceptionHandler()
+2024-08-26 16:29:02.968 DEBUG 10849 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-26 16:29:02.970 DEBUG 10851 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing ["erreur........"]
+2024-08-26 16:29:02.979 DEBUG 10860 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.Exception]
+2024-08-26 16:29:02.980 DEBUG 10861 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 16:29:42.128 INFO  50009 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 16:54:25.795 INFO  2666  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 196 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 16:54:25.801 INFO  2672  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 16:54:27.494 INFO  4365  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 16:54:27.537 INFO  4408  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 16:54:27.539 INFO  4410  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 16:54:27.683 INFO  4554  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 16:54:27.685 INFO  4556  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1766 ms
+2024-08-26 16:54:28.006 DEBUG 4877  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-08-26 16:54:28.102 DEBUG 4973  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 16:54:28.209 DEBUG 5080  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 16:54:28.313 DEBUG 5184  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 16:54:28.526 INFO  5397  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 16:54:28.565 INFO  5436  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 3.974 seconds (process running for 6.406)
+2024-08-26 16:54:34.542 INFO  11413 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 16:54:34.544 INFO  11415 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 16:54:34.544 DEBUG 11415 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 16:54:34.545 DEBUG 11416 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 16:54:34.545 DEBUG 11416 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 16:54:34.546 DEBUG 11417 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@484530d5
+2024-08-26 16:54:34.547 DEBUG 11418 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d25b404
+2024-08-26 16:54:34.548 DEBUG 11419 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 16:54:34.548 INFO  11419 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 4 ms
+2024-08-26 16:54:34.568 DEBUG 11439 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/demo/exception", parameters={}
+2024-08-26 16:54:34.595 DEBUG 11466 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.DemoController#testException()
+2024-08-26 16:54:34.628 DEBUG 11499 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.backrestapi.intercepteurs.MyGlobalExceptionHandler#handleAuthenticationException(Exception, WebRequest)
+2024-08-26 16:54:34.772 DEBUG 11643 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 16:54:34.775 DEBUG 11646 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.backrestapi.dtos.ErrorDto@71541e1a]
+2024-08-26 16:54:34.823 DEBUG 11694 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [javax.security.sasl.AuthenticationException: Echec connexion......]
+2024-08-26 16:54:34.826 DEBUG 11697 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2024-08-26 16:55:05.492 INFO  42363 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 16:59:31.057 INFO  1072  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 6028 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 16:59:31.063 INFO  1078  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 16:59:32.313 INFO  2328  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 16:59:32.333 INFO  2348  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 16:59:32.334 INFO  2349  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 16:59:32.417 INFO  2432  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 16:59:32.418 INFO  2433  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1278 ms
+2024-08-26 16:59:32.688 DEBUG 2703  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-08-26 16:59:32.770 DEBUG 2785  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 16:59:32.813 DEBUG 2828  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 16:59:32.858 DEBUG 2873  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 16:59:32.983 INFO  2998  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 16:59:32.999 INFO  3014  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 2.508 seconds (process running for 3.63)
+2024-08-26 16:59:43.636 INFO  13651 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 16:59:43.637 INFO  13652 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 16:59:43.639 DEBUG 13654 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 16:59:43.641 DEBUG 13656 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 16:59:43.642 DEBUG 13657 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 16:59:43.645 DEBUG 13660 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2deda66a
+2024-08-26 16:59:43.645 DEBUG 13660 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@538dc7d4
+2024-08-26 16:59:43.646 DEBUG 13661 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 16:59:43.646 INFO  13661 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2024-08-26 16:59:43.665 DEBUG 13680 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/demo/nullException", parameters={}
+2024-08-26 16:59:43.687 DEBUG 13702 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.DemoController#testNullException()
+2024-08-26 16:59:43.716 DEBUG 13731 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.backrestapi.intercepteurs.MyGlobalExceptionHandler#handleNullPointerException(Exception, WebRequest)
+2024-08-26 16:59:43.831 DEBUG 13846 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26 16:59:43.835 DEBUG 13850 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.backrestapi.dtos.ErrorDto@5516964b]
+2024-08-26 16:59:43.877 DEBUG 13892 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: ......]
+2024-08-26 16:59:43.878 DEBUG 13893 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 204 NO_CONTENT
+2024-08-26 17:00:19.852 INFO  49867 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26 17:17:27.419 INFO  1176  --- [main] f.d.b.BackrestapiApplication : Starting BackrestapiApplication using Java 17.0.12 with PID 8888 (C:\Users\Admin\Desktop\SpringFormation\backrestapi\target\classes started by Admin in C:\Users\Admin\Desktop\SpringFormation\backrestapi)
+2024-08-26 17:17:27.424 INFO  1181  --- [main] f.d.b.BackrestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2024-08-26 17:17:28.833 INFO  2590  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2024-08-26 17:17:28.853 INFO  2610  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2024-08-26 17:17:28.855 INFO  2612  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26 17:17:28.937 INFO  2694  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-08-26 17:17:28.937 INFO  2694  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1429 ms
+2024-08-26 17:17:29.294 DEBUG 3051  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2024-08-26 17:17:29.344 DEBUG 3101  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26 17:17:29.390 DEBUG 3147  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26 17:17:29.440 DEBUG 3197  --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26 17:17:29.557 INFO  3314  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2024-08-26 17:17:29.578 INFO  3335  --- [main] f.d.b.BackrestapiApplication : Started BackrestapiApplication in 2.808 seconds (process running for 3.946)
+2024-08-26 17:17:54.523 INFO  28280 --- [http-nio-8085-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26 17:17:54.525 INFO  28282 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-08-26 17:17:54.526 DEBUG 28283 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2024-08-26 17:17:54.527 DEBUG 28284 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2024-08-26 17:17:54.527 DEBUG 28284 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2024-08-26 17:17:54.529 DEBUG 28286 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@348f8435
+2024-08-26 17:17:54.530 DEBUG 28287 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6fca66b3
+2024-08-26 17:17:54.530 DEBUG 28287 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-26 17:17:54.531 INFO  28288 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2024-08-26 17:17:54.553 DEBUG 28310 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : POST "/api/logs", parameters={}
+2024-08-26 17:17:54.581 DEBUG 28338 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.backrestapi.controllers.LogController#postLog(ErrorDto)
+2024-08-26 17:17:54.745 DEBUG 28502 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [fr.dawan.backrestapi.dtos.ErrorDto@1296987a]
+2024-08-26 17:17:54.788 ERROR 28545 --- [http-nio-8085-exec-3] f.d.b.controllers.LogController : {"code":400,"message":"contenu de ErrorLog","timeStamp":null,"path":"","errorLevel":"ERROR","errorType":"EXCEPTION"}
+2024-08-26 17:17:54.800 DEBUG 28557 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-26 17:17:54.801 DEBUG 28558 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing ["Message de log inséré........."]
+2024-08-26 17:17:54.810 DEBUG 28567 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2024-08-26 17:18:56.509 INFO  90266 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
