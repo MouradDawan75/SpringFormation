@@ -5,11 +5,17 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +32,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import fr.dawan.backrestapi.dtos.ProductDto;
+import fr.dawan.backrestapi.services.FileService;
 import fr.dawan.backrestapi.services.IProductService;
 
 @RestController
@@ -40,6 +47,9 @@ public class ProductController {
 	
 	@Value("${storage.folder}")
 	private String storageFolder;
+	
+	@Autowired
+	private FileService fileService;
 	
 	
 	@GetMapping(value = {"/{page}/{size}/{search}", "/{page}/{size}"}, produces = "application/json")
@@ -102,6 +112,30 @@ public class ProductController {
 		}else {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No product to delete.");
 		}
+		
+	}
+	
+	@GetMapping(value = "/image/{productId}", produces = "application/octet-stream")
+	public ResponseEntity<Resource> getProductImage(@PathVariable("productId") long id ) throws Exception{
+		
+		ProductDto dto = productService.getById(id);
+		
+		//Paths.get("."): permet de revenir à la racine de disque dur contenant le projet (c: pour ce projet)
+		
+//		Path newPath = Paths.get(".").resolve(storageFolder+dto.getImagePath());
+//		Resource resource = new UrlResource(newPath.toUri());
+		
+		// Ce traitement est déplacé dans FileService
+		
+		Resource resource = fileService.getResource(dto);
+		Path newPath = resource.getFile().toPath();
+		
+		//Insérer la ressource dans le header de la réponse http
+		
+		return ResponseEntity.ok()
+				.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename="+resource.getFilename())
+				.header(HttpHeaders.CONTENT_TYPE, Files.probeContentType(newPath))
+				.body(resource);
 		
 	}
 
