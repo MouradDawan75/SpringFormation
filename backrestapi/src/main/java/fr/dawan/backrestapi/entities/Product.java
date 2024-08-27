@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
@@ -21,6 +22,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.MapKeyColumn;
 import jakarta.persistence.Version;
@@ -78,12 +80,20 @@ public class Product extends BaseEntity{
 	@JoinColumn(name = "category_id")
 	private Category category;
 	
+	//ManyToMany avec Supplier
+	/*
+	 * mappedBy: permet de choisir la classe principale et de générer qu'1 seule table de jointure
+	 */
+	@ManyToMany(cascade = CascadeType.REMOVE, mappedBy = "products")
+	private Set<Supplier> suppliers;
+	
 	
 
 	public Product() {
 		//Initialiser tous les attributs de type collection
 		ingredients = new HashSet();
 		pricesByPromotion = new HashMap();
+		suppliers = new HashSet();
 	}
 
 //	public long getId() {
@@ -167,6 +177,14 @@ public class Product extends BaseEntity{
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	public Set<Supplier> getSuppliers() {
+		return suppliers;
+	}
+
+	public void setSuppliers(Set<Supplier> suppliers) {
+		this.suppliers = suppliers;
 	}
 	
 	
