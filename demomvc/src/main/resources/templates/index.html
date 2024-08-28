@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		
+	</head>
+	<body>
+	
+		<h3>Attributs de Thymeleaf</h3>
+		<p>Le contenu des attributs Thymeleaf peut être du simple texte ou une expression qui sera interprétée
+			par Thymeleaf à l'exécution. Les expressions sont délimitées par:
+		</p>
+		</br>
+		${...} : pour les expressions à évaluer </br>
+		*{...} : pour les expressions de selection à évaluer </br>
+		@{...} : pour les expressions d'url </br>
+		~{...} : pour les expressions de fragment </br>
+		
+		<h3 th:text="${message}"></h3></br>
+		<div th:text="${player.name}">Dawan</div>
+		
+	</body>
+</html>
