@@ -1,8 +1,17 @@
 package fr.dawan.demoSpringCore.rappels;
 
+import java.beans.XMLDecoder;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tools {
 	
 	// variable de classe, pas besoin de l'initialiser car elle possède une valeur par défaut
+	/*
+	 * Types numériques: par défaut = 0
+	 * Type boolean: par défaut = false
+	 * Type complèxe (objet) par défaut = null
+	 */
 	int x;
 	
 	public void instanceMethode() {
@@ -15,7 +24,7 @@ public class Tools {
 		
 	}
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 		
     	Tools.classeMethode();
     	
@@ -44,7 +53,83 @@ public class Tools {
 			e.printStackTrace();
 		}
     	
+    	String s1 = "test";
+    	
+    	String s = "test";
+    	s.toUpperCase();
+    	
+    	Animal a = new Animal();
+    	a.setNom("a");
+    	a.setAge(5);
+    	a.emettreSon();
+    
+    	
+    	
+    	Chat c = new Chat();
+    	c.setNom("c");
+    	c.setAge(3);
+    	c.emettreSon();
+    	c.dormir();
+    	
+    	//Une classe mère définie une sorte de structure de base pour les classes filles. Elle contient les
+    	//éléments communs aux classes filles
+    	
+    	//La classe fille récupère grace à l'héritage tous les éléments publiques de la classe mère
+    	/*
+    	 * En plus des attributs définis dans la classe mère, elle peut avoir des attributs qui lui sont spécifiques
+    	 * En plus des méthodes définies dans la classe mère, elle peut avoir des méthodes qui lui sont spécifiques
+    	 * Elle peut surcharger (modifier) les méthodes défnies dans la classe mère en cas de besoin
+    	 * 
+    	 */
+    	
+    	Animal a1 = new Animal();
+    	Animal a2 = new Chat();
+    	Animal a3 = new Chien();
+    	
+    	//Polymorphisme: c'est le fait qu'un objet puisse prendre plusieurs formes.
+    	/*
+    	 * C'est une conséquence de l'héritage, c'est le fait que l'objet parent puisse prendre la forme de tous les
+    	 * objets enfants.
+    	 */
+    	
+    	List<String> chaines = new ArrayList<>();
+    	chaines.add("s");
+    	chaines.add("s1");
+    	
+    	//Collection polymorphique
+    	List<Animal> animaux = new ArrayList<>();
+    	animaux.add(new Animal());
+    	animaux.add(new Chat());
+    	animaux.add(new Chien());
+    	animaux.add(new Giraffe());
+    	
+    	son(new Animal());
+    	son(new Chat());
+    	son(new Chien());
+    	son(new Giraffe());
+    	
+    	ICalcul cal = new CalculDatabase();
+    	
+    	cal.add(10, 20);
+    	cal.add(10, 20);
+    	cal.add(10, 20);
+    	cal.add(10, 20);
+    	cal.add(10, 20);
+    	
+    	traitement(new CalculFichier(), 10, 25);
+    	traitement(new CalculDatabase(), 45, 22);
+    	
+    	
 	}
+    
+    
+    public static void son(Animal a) {
+    	a.emettreSon();
+    }
+    
+    public static int traitement(ICalcul ic, int x, int y) {
+    	return ic.add(x, y);
+    }
     
     public static void calculs(int i) throws Exception {
     	
@@ -63,6 +148,17 @@ public class Tools {
     		//throw permet de déclencher une exception
     		throw new Exception("Tentative de division par zéro.....");
     	}
+    }
+    
+    public int somme(int x, int y) {
+    	if(isPositif(x) && isPositif(y)) {
+    		return x + y;
+    	}
+    	return 0;
+    }
+    
+    private boolean isPositif(int i) {
+    	return i > 0;
     }
 
 }
