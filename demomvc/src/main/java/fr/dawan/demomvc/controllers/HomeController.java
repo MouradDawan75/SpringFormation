@@ -1,11 +1,18 @@
 package fr.dawan.demomvc.controllers;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import fr.dawan.demomvc.entities.Produit;
+import fr.dawan.demomvc.services.IProduitService;
 
 //Controller MVC: qui renvoie des pages HTML
 /*
@@ -49,11 +56,14 @@ class Player{
 
 @Controller
 public class HomeController {
+	
+	@Autowired
+	private IProduitService produitService;
 
 	
 	//@RequestMapping(value = "/", method = RequestMethod.GET)
 	@GetMapping("/")
-	public String Accueil(Model model) {
+	public String Accueil(Model model) throws Exception{
 		
 		//Le controller utilise le model pour fournir des données à la vue
 		
@@ -63,6 +73,34 @@ public class HomeController {
 		
 		model.addAttribute("player", player);
 		
+		List<Player> players = new ArrayList<>();
+		players.add(new Player("Jean"));
+		players.add(new Player("Marie"));
+		
+		model.addAttribute("allPlayer", players);
+		
+		
+		
 		return "index";
+	}
+	
+	@GetMapping("/load")
+	public String loadTestData() throws Exception {
+		
+		//Vérifier si la table est vide:
+		
+		if(produitService.getAll().size() == 0) {
+			
+			Produit p1 = new Produit("PC Dell", 1500, 10);
+			produitService.create(p1);
+			
+			Produit p2 = new Produit("Ecran HP", 99, 10);
+			produitService.create(p2);
+			
+			Produit p3 = new Produit("Table", 30, 10);
+			produitService.create(p3);
+		}
+		
+		return "redirect:/";
 	}
 }
