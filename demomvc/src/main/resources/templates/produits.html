@@ -22,11 +22,20 @@
 		
 		</br></br>
 		<div class="container">
-			<form th:action="@{/produits/addProduit}" method="post" th:object="${produit}">
+			<form th:action="@{/produits/addProduit}" method="post" th:object="${produitForm}">
 				<input type="text" readonly="readonly" th:field="*{id}" class="form-control"/>
 				<input type="text"  th:field="*{description}" class="form-control"/>
+				
+				<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></div>
+				
 				<input type="text"  th:field="*{price}" class="form-control"/>
+				
+				<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></div>
+				
 				<input type="text"  th:field="*{quantite}" class="form-control"/>
+				
+				<div class="alert alert-warning" role="alert" th:if="${#fields.hasErrors('quantite')}" th:errors="*{quantite}"></div>
+				
 				</br>
 				<button type="submit" class="btn btn-primary">Valider</button>
 				</br>
@@ -34,9 +43,6 @@
 		</div>
 		
 		</br>
-		
-		
-		
 		
 		<div class="container">
 		<table class="table table-striped">

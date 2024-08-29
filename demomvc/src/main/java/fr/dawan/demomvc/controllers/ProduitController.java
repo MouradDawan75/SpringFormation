@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import fr.dawan.demomvc.entities.Produit;
+import fr.dawan.demomvc.formbeans.ProduitForm;
 import fr.dawan.demomvc.services.IProduitService;
+import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("produits")
@@ -28,7 +31,17 @@ public class ProduitController {
 	@GetMapping("/display")
 	public String display(Model model, @RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) throws Exception{
 		
-		 List<Produit> totalProduits = produitService.getAll();
+		 displayPaging(model, page, size);
+		 
+		 model.addAttribute("produitForm", new ProduitForm());
+		 
+		 return "produits";
+		
+	}
+
+	private void displayPaging(Model model, int page, int size) throws Exception {
+		
+		List<Produit> totalProduits = produitService.getAll();
 		 
 		 //totalProduits.stream().filter(p -> p.getPrice() > 100).collect(Collectors.toList()).forEach(p -> System.out.println(p));
 		 
@@ -45,7 +58,7 @@ public class ProduitController {
 		 
 		 model.addAttribute("produits", produitService.getAllPaging(page, size));
 		 
-		 model.addAttribute("produit", new Produit());
+		 
 		 
 		 model.addAttribute("size", size);
 		 
@@ -57,17 +70,28 @@ public class ProduitController {
 					 						.collect(Collectors.toList());
 			 model.addAttribute("pageNumbers", pageNumbers);
 		 }
-		 
-		 
-		 
-		 return "produits";
-		
 	}
 	
 	//@ModelAttribute: permet de gérer les objets connectés aux formulaires
 	
 	@PostMapping("/addProduit")
-	public String addProduit(@ModelAttribute("produit") Produit produit) throws Exception {
+	public String addProduit(@Valid @ModelAttribute("produitForm") ProduitForm produitForm, BindingResult bindingResult, Model model) throws Exception {
+		
+		//bindingResult: contient les erreurs de validation
+		
+		if(bindingResult.hasErrors()) {
+			
+			System.out.println(">>>>>>>>>> Formulaire non valide...........");
+			
+			displayPaging(model, 1, 3);
+			
+			//Ne pas renvoyer un ProduitForm
+			// model.addAttribute("produitForm", new ProduitForm()); - car il écrase celui fourni par le formulaire
+			
+			return "produits";
+		}
+		
+		Produit produit = new Produit(produitForm.getId(), produitForm.getDescription(), produitForm.getPrice(), produitForm.getQuantite());
 		
 		if(produit.getId() == 0) {
 		produitService.create(produit);
@@ -88,9 +112,11 @@ public class ProduitController {
 	public String update(@PathVariable("id") long id, Model model) throws Exception {
 		
 		Produit prod = produitService.getById(id);
-		//prod à afficher dans le formulaire
+		//prod à afficher dans le formulaire -> à convertir en ProduitForm
 		
-		model.addAttribute("produit", prod);
+		ProduitForm prodForm = new ProduitForm(prod.getId(), prod.getDescription(), prod.getPrice(), prod.getQuantite());
+		
+		model.addAttribute("produitForm", prodForm);
 		model.addAttribute("produits", produitService.getAll());
 		
 		return "produits";
@@ -102,7 +128,7 @@ public class ProduitController {
 		List<Produit> prods = produitService.findByDescription(key);
 		
 		model.addAttribute("produits", prods);
-		model.addAttribute("produit", new Produit());
+		model.addAttribute("produitForm", new ProduitForm());
 		
 		return "produits";
 	}

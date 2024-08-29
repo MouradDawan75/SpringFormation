@@ -1,7 +1,6 @@
-package fr.dawan.demomvc.entities;
+package fr.dawan.demomvc.formbeans;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -11,15 +10,12 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 
-@Entity
-public class Produit {
+public class ProduitForm {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private long id;
 	
 	@NotEmpty(message = "Ce champs est obligatoire")
-	@Column(unique = true)
 	private String description;
 	
 	@DecimalMin(value = "10", message = "Prix min est 10")
@@ -29,6 +25,7 @@ public class Produit {
 	@Min(1)
 	@Max(100)
 	private int quantite;
+	
 	public long getId() {
 		return id;
 	}
@@ -53,18 +50,19 @@ public class Produit {
 	public void setQuantite(int quantite) {
 		this.quantite = quantite;
 	}
-	public Produit(long id, String description, double price, int quantite) {
+
+	public ProduitForm(long id, String description, double price, int quantite) {
 		super();
 		this.id = id;
 		this.description = description;
 		this.price = price;
 		this.quantite = quantite;
 	}
-	public Produit() {
+	public ProduitForm() {
 		super();
 	}
 	
-	public Produit(String description, double price, int quantite) {
+	public ProduitForm(String description, double price, int quantite) {
 		super();
 		this.description = description;
 		this.price = price;
@@ -72,5 +70,4 @@ public class Produit {
 	}
 	
 	
-
 }
