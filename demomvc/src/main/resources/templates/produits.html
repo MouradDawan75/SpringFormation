@@ -11,15 +11,29 @@
 		<h3>Liste des produits</h3></br></br>
 		
 		<div class="container">
+			<form th:action="@{/produits/findByKey}" method="post">
+				<input type="text"  name="motCle" class="form-control"/>
+				</br>
+					<button type="submit" class="btn btn-primary">Rechercher</button>
+				</br>
+			</form>
+		</div>
+		
+		
+		</br></br>
+		<div class="container">
 			<form th:action="@{/produits/addProduit}" method="post" th:object="${produit}">
 				<input type="text" readonly="readonly" th:field="*{id}" class="form-control"/>
 				<input type="text"  th:field="*{description}" class="form-control"/>
 				<input type="text"  th:field="*{price}" class="form-control"/>
 				<input type="text"  th:field="*{quantite}" class="form-control"/>
-				
+				</br>
 				<button type="submit" class="btn btn-primary">Valider</button>
+				</br>
 			</form>
 		</div>
+		
+		</br>
 		
 		
 		
@@ -37,13 +51,21 @@
 				<td th:text="${p.id}"></td>
 				<td th:text="${p.description}"></td>
 				<td th:text="${p.price}"></td>
-				<td th:text="${p.quantite}"></td>
-				<!--
+				
+				
+				
 				<td>
-					<a th:href="@{/produits/delete/{id} (id=$(p.id))}">Supprimer</a> | 
-					<a th:href="@{/produits/update/{id} (id=$(p.id))}">Modifier</a>
+					<a th:href="@{/produits/moins/{id} (id=${p.id})}" class="btn btn-dark">-</a>
+					<span th:text="${p.quantite}"></span>
+					<a th:href="@{/produits/plus/{id} (id=${p.id})}" class="btn btn-dark">+</a>
 				</td>
-				-->
+				
+				
+				<td>
+					<a th:href="@{/produits/delete/{id} (id=${p.id})}" class="btn btn-danger">Supprimer</a> | 
+					<a th:href="@{/produits/update/{id} (id=${p.id})}" class="btn btn-warning">Modifier</a>
+				</td>
+				
 				
 			</tr>
 			
