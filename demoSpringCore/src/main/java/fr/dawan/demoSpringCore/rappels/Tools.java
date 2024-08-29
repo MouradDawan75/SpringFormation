@@ -119,6 +119,26 @@ public class Tools {
     	traitement(new CalculFichier(), 10, 25);
     	traitement(new CalculDatabase(), 45, 22);
     	
+    	ICalcul iccc = (x,y) -> x * y; //expression lambda -> méthode anonyme
+    	
+    	ICalcul iii = ClasseService::classeMethode; //réference vers une méthode de classe
+    	iii.add(10, 25);
+    	
+    	ClasseService cs = new ClasseService();
+    	
+    	ICalcul iiiii = cs::instanceMethode; //réference vers une méthode d'instance
+    	
+    	//Lambda et méthodes réference: syntaxe utilisée dans l'API Stream
+    	
+    	//Classe anonyme: syntaxe très utilisée dans Android et dans les Thread
+    	ICalcul dd = new ICalcul() {
+			
+			@Override
+			public int add(int x, int y) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+		};
     	
 	}
     
@@ -149,6 +169,8 @@ public class Tools {
     		throw new Exception("Tentative de division par zéro.....");
     	}
     }
+    
+    // (x,y) -> x+y;
     
     public int somme(int x, int y) {
     	if(isPositif(x) && isPositif(y)) {

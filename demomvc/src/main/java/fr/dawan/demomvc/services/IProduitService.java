@@ -4,6 +4,7 @@ import java.util.List;
 
 import fr.dawan.demomvc.entities.Produit;
 
+
 public interface IProduitService {
 
 	void create(Produit p) throws Exception;
@@ -17,5 +18,7 @@ public interface IProduitService {
 	Produit getById(long id) throws Exception;
 
 	List<Produit> findByDescription(String key) throws Exception;
+	
+	List<Produit> getAllPaging(int page, int size) throws Exception;
 
 }

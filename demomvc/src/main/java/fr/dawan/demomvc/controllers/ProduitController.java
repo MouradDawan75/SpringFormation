@@ -1,6 +1,9 @@
 package fr.dawan.demomvc.controllers;
 
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,12 +26,39 @@ public class ProduitController {
 	private IProduitService produitService;
 	
 	@GetMapping("/display")
-	public String display(Model model) throws Exception{
+	public String display(Model model, @RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) throws Exception{
 		
-		 List<Produit> produitListe = produitService.getAll();
-		 model.addAttribute("produits", produitListe);
+		 List<Produit> totalProduits = produitService.getAll();
+		 
+		 //totalProduits.stream().filter(p -> p.getPrice() > 100).collect(Collectors.toList()).forEach(p -> System.out.println(p));
+		 
+		 int totalIems = totalProduits.size();
+		 int totalPages = 0;
+		 
+		 
+		 
+		 if(totalIems % size == 0) {
+			 totalPages = totalIems / size;
+		 }else {
+			 totalPages = totalIems / size + 1;
+		 }
+		 
+		 model.addAttribute("produits", produitService.getAllPaging(page, size));
 		 
 		 model.addAttribute("produit", new Produit());
+		 
+		 model.addAttribute("size", size);
+		 
+		 if(totalPages > 0) {
+			 
+			 //Construire une liste de int allant de 1 à totalPages
+			 List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
+					 						.boxed()
+					 						.collect(Collectors.toList());
+			 model.addAttribute("pageNumbers", pageNumbers);
+		 }
+		 
+		 
 		 
 		 return "produits";
 		
@@ -80,13 +110,23 @@ public class ProduitController {
 	@GetMapping("/moins/{id}")
 	public String quantiteMoins(@PathVariable("id") long id) throws Exception{
 		
-		return null;
+		Produit prod = produitService.getById(id);
+		if(prod.getQuantite() > 1) {
+			prod.setQuantite(prod.getQuantite() - 1);
+			produitService.update(prod);
+		}
+		
+		return "redirect:/produits/display";
 	}
 	
 	@GetMapping("/plus/{id}")
 	public String quantitePlus(@PathVariable("id") long id) throws Exception{
 		
-		return null;
+		Produit prod = produitService.getById(id);
+		prod.setQuantite(prod.getQuantite() + 1);
+		produitService.update(prod);
+		
+		return "redirect:/produits/display";
 	}
 
 }

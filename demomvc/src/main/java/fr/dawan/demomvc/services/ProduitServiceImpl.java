@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import fr.dawan.demomvc.entities.Produit;
@@ -23,6 +24,7 @@ public class ProduitServiceImpl implements IProduitService {
 	@Override
 	public void update(Produit p) throws Exception{
 		produitRepository.saveAndFlush(p);
+		
 	}
 	
 	@Override
@@ -51,6 +53,11 @@ public class ProduitServiceImpl implements IProduitService {
 		// pour la finder méthoder : les % ne sont pas nécessaire car générés par Spring Data
 		
 		return produitRepository.findByDescriptionContaining(key); 
+	}
+	
+	@Override
+	public List<Produit> getAllPaging(int page, int size) throws Exception{
+		return produitRepository.findAll(PageRequest.of(page - 1, size)).getContent();
 	}
 	
 

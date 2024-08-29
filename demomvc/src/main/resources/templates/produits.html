@@ -73,4 +73,15 @@
 		</div>
 		
 	</br>
+	<div class="container">
+	<nav aria-label="Page navigation example">
+	  <ul class="pagination">
+	    <li class="page-item" th:each="pageNumber:${pageNumbers}">
+			<a class="page-link" th:href="@{/produits/display (page=${pageNumber}, size=${size})}"  th:text="${pageNumber}" ></a>
+		</li>
+	   
+	  </ul>
+	</nav>
+	</div>
+	</body>
 </html>
