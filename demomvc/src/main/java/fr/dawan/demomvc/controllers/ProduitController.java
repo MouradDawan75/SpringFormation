@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import fr.dawan.demomvc.entities.Produit;
 import fr.dawan.demomvc.formbeans.ProduitForm;
 import fr.dawan.demomvc.services.IProduitService;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @Controller
@@ -103,8 +104,16 @@ public class ProduitController {
 	}
 	
 	@GetMapping("/delete/{id}")
-	public String delete(@PathVariable("id") long id) throws Exception {
-		produitService.deleteById(id);
+	public String delete(@PathVariable("id") long id, HttpSession session, Model model) throws Exception {
+		
+		
+		session.removeAttribute("erreurdelete");
+		//vérifier si user est Admin
+		if((boolean) session.getAttribute("admin"))
+			produitService.deleteById(id);
+		else
+			session.setAttribute("erreurdelete", "Action interdite");
+		
 		return "redirect:/produits/display";
 	}
 	

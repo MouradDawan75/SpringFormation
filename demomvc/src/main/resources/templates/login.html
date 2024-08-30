@@ -36,6 +36,7 @@
 	            <div class="form-group">
 	            	<button type="submit" class="form-control btn btn-primary submit px-3">Connexion</button>
 	            </div>
+				<div th:if="${erreur}" th:text="${erreur}" style="color:red"></div>
 	           
 	          </form>
 	          

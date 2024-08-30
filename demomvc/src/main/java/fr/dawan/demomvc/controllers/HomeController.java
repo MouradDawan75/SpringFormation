@@ -118,4 +118,9 @@ public class HomeController {
 		
 		return "redirect:/";
 	}
+	
+	@GetMapping("/adminError")
+	public String adminError() {
+		return "adminError";
+	}
 }

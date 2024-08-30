@@ -1,10 +1,16 @@
 package fr.dawan.demomvc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import fr.dawan.demomvc.intercepteurs.LoginIntercepteur;
 
 @SpringBootApplication
 public class DemomvcApplication {
@@ -16,6 +22,27 @@ public class DemomvcApplication {
 	@Bean
 	public PasswordEncoder getEncoder() {
 		return new BCryptPasswordEncoder();
+	}
+	
+	@Autowired
+	private LoginIntercepteur loginIntercepteur;
+	
+	//Récupérer la configuration du module MVC mise en place par Spring Boot
+	//pour la compléter.
+	//Ajouter un intercepetru par exemple
+	
+	@Bean
+	public WebMvcConfigurer myConf(){
+		
+		return new WebMvcConfigurer() {
+			
+			@Override
+			public void addInterceptors(InterceptorRegistry registry) {
+				registry.addInterceptor(loginIntercepteur);
+			}
+			
+		};
+		
 	}
 
 }
