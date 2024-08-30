@@ -71,6 +71,4 @@ public class Produit {
 		this.quantite = quantite;
 	}
 	
-	
-
 }

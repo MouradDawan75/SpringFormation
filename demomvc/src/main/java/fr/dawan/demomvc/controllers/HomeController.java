@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import fr.dawan.demomvc.entities.Produit;
+import fr.dawan.demomvc.entities.Utilisateur;
 import fr.dawan.demomvc.services.IProduitService;
+import fr.dawan.demomvc.services.IUtilisateurService;
 
 //Controller MVC: qui renvoie des pages HTML
 /*
@@ -59,6 +61,9 @@ public class HomeController {
 	
 	@Autowired
 	private IProduitService produitService;
+	
+	@Autowired
+	private IUtilisateurService utilisateurService;
 
 	
 	//@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -99,6 +104,16 @@ public class HomeController {
 			
 			Produit p3 = new Produit("Table", 30, 10);
 			produitService.create(p3);
+			
+			
+		}
+		
+		if(utilisateurService.getAll().size() == 0 ) {
+			Utilisateur u1 = new Utilisateur("admin@dawan.fr", "admin", true, "".getBytes());
+			utilisateurService.create(u1);
+			
+			Utilisateur u2 = new Utilisateur("test@dawan.fr", "test", false, "".getBytes());
+			utilisateurService.create(u2);
 		}
 		
 		return "redirect:/";

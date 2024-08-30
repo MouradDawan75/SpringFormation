@@ -8,7 +8,7 @@
 	</head>
 	<body>
 	
-		<h3>Liste des produits</h3></br></br>
+		<h3>Liste des utilisateurs</h3></br></br>
 		
 		<div class="container">
 			
@@ -18,8 +18,8 @@
 						<div class="card-title">
 							<h3>Rechercher:</h3>
 						</div>
-										<form th:action="@{/produits/findByKey}" method="post">
-											<input type="text"  name="motCle" class="form-control"/>
+										<form th:action="@{/utilisateurs/findByEmail}" method="post">
+											<input type="text"  name="email" class="form-control"/>
 											</br>
 												<button type="submit" class="btn btn-primary">Rechercher</button>
 											</br>
@@ -30,26 +30,25 @@
 
 				<div class="col" style="border: solid; padding: 10px;">
 					</br></br>
+					<!--
 									<div class="container">
-										<form th:action="@{/produits/addProduit}" method="post" th:object="${produitForm}">
+										<form th:action="@{/utilisateurs/addUtilistaur}" method="post" th:object="${userForm}">
 											<input type="text" readonly="readonly" th:field="*{id}" class="form-control"/>
-											<input type="text"  th:field="*{description}" class="form-control"/>
+											<input type="text"  th:field="*{email}" class="form-control"/>
 											
-											<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></div>
+											<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
 											
-											<input type="text"  th:field="*{price}" class="form-control"/>
+											<input type="password"  th:field="*{password}" class="form-control"/>
 											
-											<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></div>
+											<div class="alert alert-warning" role="alert"  th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
 											
-											<input type="text"  th:field="*{quantite}" class="form-control"/>
-											
-											<div class="alert alert-warning" role="alert" th:if="${#fields.hasErrors('quantite')}" th:errors="*{quantite}"></div>
 											
 											</br>
 											<button type="submit" class="btn btn-primary">Valider</button>
 											</br>
 										</form>
 									</div>
+									-->
 				</div>
 
 
@@ -67,28 +66,31 @@
 		<table class="table table-striped">
 			<tr>
 				<th>ID</th>
-				<th>Description</th>
-				<th>Prix</th>
-				<th>Quantité</th>
+				<th>Email</th>
+				<th>Password</th>
+				<th>Admin</th>
 				<th>Actions</th>
 			</tr>
-			<tr th:each="p:${produits}">
-				<td th:text="${p.id}"></td>
-				<td th:text="${p.description}"></td>
-				<td th:text="${p.price}"></td>
-				
-				
+			<tr th:each="u:${users}">
+				<td th:text="${u.id}"></td>
+				<td th:text="${u.email}"></td>
+				<td th:text="${u.password}"></td>
 				
 				<td>
-					<a th:href="@{/produits/moins/{id} (id=${p.id})}" class="btn btn-dark">-</a>
-					<span th:text="${p.quantite}"></span>
-					<a th:href="@{/produits/plus/{id} (id=${p.id})}" class="btn btn-dark">+</a>
+					<input type="checkbox" th:checked="${u.admin}"/>
+				</td>
+				
+				<td>
+					
+					<img th:src="|data:image/jpeg;base64,${u.imageBase64}|" style="width:45px; height:45px"/>
+					
 				</td>
 				
 				
 				<td>
-					<a th:href="@{/produits/delete/{id} (id=${p.id})}" class="btn btn-danger">Supprimer</a> | 
-					<a th:href="@{/produits/update/{id} (id=${p.id})}" class="btn btn-warning">Modifier</a>
+					<a th:href="@{/utilisateurs/delete/{id} (id=${u.id})}" class="btn btn-danger">Supprimer</a>  
+					
+				<!--|<a th:href="@{/utilisateurs/update/{id} (id=${u.id})}" class="btn btn-warning">Modifier</a>-->	
 				</td>
 				
 				
@@ -98,6 +100,7 @@
 		</div>
 		
 	</br>
+	<!--
 	<div class="container">
 	<nav aria-label="Page navigation example">
 	  <ul class="pagination">
@@ -108,5 +111,6 @@
 	  </ul>
 	</nav>
 	</div>
+	-->
 	</body>
 </html>
